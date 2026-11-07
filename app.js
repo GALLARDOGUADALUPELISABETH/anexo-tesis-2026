@@ -84,7 +84,6 @@
   const docs={
     anexo:{file:'assets/anexo-imprimible.pdf',title:'Anexo completo para impresión',description:'Registros, entrevista, instrumentos y evidencias · 66 páginas · A4'},
     autorizacion:{file:'assets/autorizacion.pdf',title:'Nota de autorización institucional',description:'Documento completo · 2 páginas'},
-    academico:{file:'assets/documento-academico.pdf',title:'Documento académico de tesis',description:'PDF íntegro conservado en el anexo de origen · 80 páginas'},
     portada:{file:'assets/portada-e-informacion.pdf',title:'Portada e información de "El matadero"',description:'Documento completo · 7 páginas'}
   };
   function selectDoc(key){
