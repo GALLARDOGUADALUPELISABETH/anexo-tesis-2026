@@ -30,3 +30,9 @@ dialog{width:96vw;max-width:1700px;height:94vh;max-height:none;border:1px solid 
 .signature .signature-field small{position:absolute;display:block;left:0;right:0;bottom:0;width:100%;margin:0;padding:0;border:0;font:inherit;line-height:18px;white-space:nowrap}
 @media(max-width:560px){.signature{gap:12px;margin:28px 0 20px}.signature .signature-field{flex:1 1 0;width:calc(50% - 6px);height:96px;--line-bottom:29px}.signature .signature-field img{height:65px;max-height:65px}.signature .signature-field small{font-size:9px;white-space:normal;line-height:13px}}
 @media print{.signature{gap:12mm;margin:5mm 0 3mm;justify-content:space-between;break-inside:avoid}.signature .signature-field{flex:0 1 60mm;width:60mm;max-width:60mm;height:26mm;--line-bottom:9mm}.signature .signature-field img{height:18mm;max-height:18mm;bottom:calc(var(--line-bottom) - 1mm)}.signature .signature-field .signature-line{background:#777}.signature .signature-field small{font-size:8pt;line-height:4mm}}
+
+/* Ajuste óptico: ambas firmas descansan sobre su línea, sin modificar los PNG originales. */
+.signature .signature-field.observer-signature img{bottom:calc(var(--line-bottom) - 8px)}
+.signature .signature-field.teacher-signature img{bottom:calc(var(--line-bottom) - 16px)}
+@media(max-width:560px){.signature .signature-field.observer-signature img{bottom:calc(var(--line-bottom) - 6px)}.signature .signature-field.teacher-signature img{bottom:calc(var(--line-bottom) - 12px)}}
+@media print{.signature .signature-field.observer-signature img{bottom:calc(var(--line-bottom) - 2mm)}.signature .signature-field.teacher-signature img{bottom:calc(var(--line-bottom) - 4mm)}}
