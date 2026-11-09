@@ -36,3 +36,13 @@ dialog{width:96vw;max-width:1700px;height:94vh;max-height:none;border:1px solid 
 .signature .signature-field.teacher-signature img{bottom:calc(var(--line-bottom) - 16px)}
 @media(max-width:560px){.signature .signature-field.observer-signature img{bottom:calc(var(--line-bottom) - 6px)}.signature .signature-field.teacher-signature img{bottom:calc(var(--line-bottom) - 12px)}}
 @media print{.signature .signature-field.observer-signature img{bottom:calc(var(--line-bottom) - 2mm)}.signature .signature-field.teacher-signature img{bottom:calc(var(--line-bottom) - 4mm)}}
+
+/* Presentación final de firmas según referencia: línea fina gris, rúbricas azules y leyendas centradas; sin marcas de color. */
+.signature{align-items:flex-end;justify-content:space-around;gap:24px}
+.signature .signature-field{flex:0 1 230px;width:230px;max-width:230px;height:115px;--line-bottom:35px}
+.signature .signature-field .signature-line{left:0;right:0;height:1px;background:#98a49a}
+.signature .signature-field.observer-signature img{bottom:calc(var(--line-bottom) - 8px)}
+.signature .signature-field.teacher-signature img{bottom:calc(var(--line-bottom) - 12px)}
+.signature .signature-field small{bottom:0;line-height:18px;text-align:center;color:#7d8871}
+@media(max-width:560px){.signature .signature-field{flex:1 1 0;width:calc(50% - 6px);max-width:none;height:96px;--line-bottom:29px}.signature .signature-field.observer-signature img{bottom:calc(var(--line-bottom) - 6px)}.signature .signature-field.teacher-signature img{bottom:calc(var(--line-bottom) - 9px)}}
+@media print{.signature .signature-field{flex:0 1 60mm;width:60mm;max-width:60mm;height:26mm;--line-bottom:9mm}.signature .signature-field.observer-signature img{bottom:calc(var(--line-bottom) - 2mm)}.signature .signature-field.teacher-signature img{bottom:calc(var(--line-bottom) - 3mm)}.signature .signature-field .signature-line{background:#888}}
