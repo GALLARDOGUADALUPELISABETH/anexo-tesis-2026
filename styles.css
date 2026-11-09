@@ -58,3 +58,9 @@ dialog{width:96vw;max-width:1700px;height:94vh;max-height:none;border:1px solid 
 #obs-1 .signature .signature-field.teacher-signature img{bottom:calc(var(--line-bottom) - 12px)}
 @media(max-width:560px){#obs-1 .signature .signature-field{--line-bottom:27px}}
 @media print{#obs-1 .signature .signature-field{--line-bottom:8mm}#obs-1 .signature .signature-field.observer-signature img{bottom:calc(var(--line-bottom) - 2mm)}#obs-1 .signature .signature-field.teacher-signature img{bottom:calc(var(--line-bottom) - 3mm)}}
+
+/* Observación N° 1: acercar las rúbricas a la línea sin mover las leyendas. */
+#obs-1 .signature .signature-field.observer-signature img{bottom:calc(var(--line-bottom) - 17px)}
+#obs-1 .signature .signature-field.teacher-signature img{bottom:calc(var(--line-bottom) - 21px)}
+@media(max-width:560px){#obs-1 .signature .signature-field.observer-signature img{bottom:calc(var(--line-bottom) - 13px)}#obs-1 .signature .signature-field.teacher-signature img{bottom:calc(var(--line-bottom) - 17px)}}
+@media print{#obs-1 .signature .signature-field.observer-signature img{bottom:calc(var(--line-bottom) - 4mm)}#obs-1 .signature .signature-field.teacher-signature img{bottom:calc(var(--line-bottom) - 5mm)}}
