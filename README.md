@@ -1,6 +1,6 @@
 # Anexo de tesis 2026 - Guadalupe Elisabeth Gallardo
 
-Sitio completo en HTML, CSS y JavaScript, con PDF, fotografías y firmas originales. Nombre docente en los registros: Edith Espíndola.
+Sitio completo en HTML, CSS y JavaScript, con PDF, fotografías y firmas originales. Nombre docente en los registros: Edith Espindola.
 
 ## Publicar en GitHub Pages
 
